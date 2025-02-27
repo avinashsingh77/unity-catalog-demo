@@ -13,8 +13,9 @@
 ## Setup and start Unity server and UI
 
 1. Clone OSS Unity catalog github repository
-    ```git@github.com:unitycatalog/unitycatalog.git
-       cd unitycatalog
+    ```
+    git@github.com:unitycatalog/unitycatalog.git
+    cd unitycatalog
     ```
 2. Follow the guide linked below to configure external identity provider  - https://docs.unitycatalog.io/server/auth/#configure-your-external-identity-provider
 
