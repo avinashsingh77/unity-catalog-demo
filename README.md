@@ -78,8 +78,7 @@
 
 7. Login with user account and save access token
     `bin/uc auth login --output jsonPretty`
-    Copy rename `sample-config.py` to `config.py`
-    Use value for `access_token` to replace value for 'agent' key in config.py
+8. Copy and rename `sample-config.py` to `config.py`. Use value for `access_token` recieved in step 7 to replace value for 'agent' key in config.py
 
 
 
