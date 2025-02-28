@@ -24,19 +24,19 @@
 
 3. [Optional] To enable UC server to vend AWS temporary credentials to access S3 buckets (for accessing External tables/volumes),enable set the parameters in etc/conf/server.properties as specified in https://docs.unitycatalog.io/server/configuration/#configuration
 
-3. Start UC server
+4. Start UC server
     `bin/start-uc-server`
 
-4. Follow the guide below to configure authentication in Unity UI - https://docs.unitycatalog.io/server/auth/#configure-and-restart-the-unity-catalog-ui
+5. Follow the guide below to configure authentication in Unity UI - https://docs.unitycatalog.io/server/auth/#configure-and-restart-the-unity-catalog-ui
 
-5. Start UC UI(accessible at http://localhost:3000/)
+6. Start UC UI(accessible at http://localhost:3000/)
     ```cd ui
        yarn install
        yarn start
     ```
-6. Add user(present in external ID provider) account to the local database
+7. Add user(present in external ID provider) account to the local database
     `bin/uc --auth_token $(cat etc/conf/token.txt) user create --name "<username>" --email <user-email-id>`
-7. Grant necessary permissions to the user:
+8. Grant necessary permissions to the user:
 
     Catalog
     ```
@@ -76,9 +76,9 @@
     bin/uc --auth_token $(cat etc/conf/token.txt) permission create --securable_type registered_model  --name unity.devconf_demo.predict_diabetes_possibility --principal  <user-emil-id> --privilege "MODIFY"
     ```
 
-7. Login with user account and save access token
+9. Login with user account and save access token
     `bin/uc auth login --output jsonPretty`
-8. Copy and rename `sample-config.py` to `config.py`. Use value for `access_token` recieved in step 7 to replace value for 'agent' key in config.py
+10. Copy and rename `sample-config.py` to `config.py`. Use value for `access_token` recieved in step 9 to replace value for 'agent' key in config.py
 
 
 
