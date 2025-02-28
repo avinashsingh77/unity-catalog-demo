@@ -5,8 +5,11 @@
     2. x-table jar file -
     3. Java 11
     4. python 3
-2. Create python virtual environment
-   ` python `
+2. Create python virtual environment and activate it
+   ```
+   python3 -m venv .venv
+   source .venv/bin/activate
+   ```
 3. Install python packages in venv
     `python -m pip instal -r requirements.txt`
 
@@ -56,6 +59,7 @@
     ```
 
     Function
+    ```
     bin/uc --auth_token $(cat etc/conf/token.txt) permission create --securable_type function  --name unity.devconf_demo.predict_diabetes_possibility --principal  <user-emil-id> --privilege "EXECUTE"
 
     bin/uc --auth_token $(cat etc/conf/token.txt) permission create --securable_type function  --name unity.devconf_demo.predict_diabetes_possibility --principal  <user-emil-id> --privilege "SELECT"
@@ -80,7 +84,18 @@
 
 
 ### Train and Register Model
+```
+python register-model.py
+```
+
 
 ### Create function in UC
 
+```
+python create-function.py
+```
+
 ### Call unity function from master script
+```
+python master.py
+```

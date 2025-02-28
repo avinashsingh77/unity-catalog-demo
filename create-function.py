@@ -36,7 +36,7 @@ def predict_diabetes_possibility(
 
     os.environ['MLFLOW_UC_OSS_TOKEN'] = uc_token
     mlflow.set_registry_uri('uc:http://127.0.0.1:8080')
-    db_model = mlflow.pyfunc.load_model(f'models:/unity.devconf_demo.diabetes_prediction/1')
+    db_model = mlflow.pyfunc.load_model(f'models:/unity.devconf_demo.diabetes_prediction/4')
 
     X_test_input = pd.DataFrame(data={
         "Pregnancies": [6],

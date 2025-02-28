@@ -1,0 +1,10 @@
+mlflow==2.20.3
+numpy==2.0.2
+pandas==2.2.3
+py4j==0.10.9.7
+pydantic==2.10.6
+pydantic_core==2.27.2
+pyspark==3.5.4
+scikit-learn==1.6.1
+scipy==1.13.1
+unitycatalog-ai==0.2.0
