@@ -1,16 +1,10 @@
 ## Prepare
-
-1. Download tools:
-    1. Spark v3.4 -
-    2. x-table jar file -
-    3. Java 11
-    4. python 3
-2. Create python virtual environment and activate it
+1. Create python virtual environment and activate it
    ```
    python3 -m venv .venv
    source .venv/bin/activate
    ```
-3. Install python packages in venv
+2. Install python packages in venv
     `python -m pip instal -r requirements.txt`
 
 ## Setup and start Unity server and UI
